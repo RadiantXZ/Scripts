@@ -3136,6 +3136,7 @@ end
 --//UI KeyBinding--//
 workspace:SetAttribute("Radiant",true)
 workspace:GetAttributeChangedSignal("Radiant"):Connect(function()
+	if Debounce then return end
 	if Hidden then
 		Hidden = false
 		Unhide()
